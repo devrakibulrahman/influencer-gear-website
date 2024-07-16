@@ -1,0 +1,156 @@
+/* ------------------ google font import ------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ------------------ universal css resets style ------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+*::selection{
+    background-color: rgb(170, 170, 170);
+}
+
+/* ------------------ use css variable ------------------ */
+:root{
+    /* ------------- font size define */
+    --font-small: 0.875rem; /** 14px **/
+    --font-medium: 1rem;    /** 16px **/
+    --font-x-large: 1.5rem; /** 24px **/
+    --font-x-large2: 1.75rem; /** 28px **/
+    --font-xx-large: 2.375rem; /** 38px **/
+    --font-xx-large2: 3.25rem; /** 52px **/
+
+    /* ------------- line height define */
+    --small-height: 0.875rem; /** 14px **/
+    --x-large-height: 1.5rem; /** 24px **/
+    --xx-large2-height: 1.75rem;   /** 28px **/
+    --p-height: 143%;
+
+
+    /* ------------- letter spacing define */
+    --ls-0-1-p: 0.1px;
+    --ls-1-8-p: 1.8%;
+
+    /* ------------- color define */
+    --dead-pixel: rgb(58, 58, 58);
+    --watermelon-sugar: rgb(224, 44, 109);
+    --river-styx: rgb(24, 25, 31);
+    --black: rgba(0, 0, 0, 0.87);
+    --infamous: rgb(120, 120, 133);
+    --granite-gray: rgb(94, 99, 102);
+    --razzmatazz: rgba(224, 44, 109, 0.87);
+    --mysterious-depths: rgb(10, 8, 38);
+    --dove-gray: rgb(108, 108, 108);
+    --white: rgb(255, 255, 255);
+    --big-fish-to-fry: gb(217, 219, 225);
+
+    /* ------------- font family name define */
+    --manrope: "Manrope", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --inter: "Inter", sans-serif;
+    --roboto: "Roboto", sans-serif;
+
+    /* ------------- font family name define */
+    --wt-400: 400;
+    --wt-500: 500;
+    --wt-600: 600;
+    --wt-700: 700;
+
+}
+
+/* ------------------ css reusable classes ------------------ */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand{
+    font-family: var(--poppins);
+    font-size: var(--font-x-large);
+    font-weight: var(--wt-700);
+    color: var(--dead-pixel);
+}
+
+.nav-text{
+    font-family: var(--poppins);
+    font-size: var(--font-medium);
+    font-weight: var(--wt-700);
+    color: var(--dead-pixel);
+}
+
+.para-text{
+    font-family: var(--poppins);
+    font-size: var(--font-medium);
+    font-weight: var(--wt-600);
+    color: var(--dead-pixel);
+    line-height: var(--x-large-height);
+}
+
+.para-text2{
+    font-family: var(--poppins);
+    font-size: var(--font-medium);
+    font-weight: var(--wt-700);
+    color: var(--dove-gray);
+}
+
+.btn-text{
+    font-family: var(--poppins);
+    font-size: var(--font-medium);
+    font-weight: var(--wt-700);
+    color: var(--white);
+}
+
+.section-text{
+    font-family: var(--poppins);
+    font-size: var(--font-x-large2);
+    font-weight: var(--wt-600);
+    color: var(--dead-pixel);
+}
+
+.card-title-text{
+    font-family: var(--poppins);
+    font-size: var(--font-x-large2);
+    font-weight: var(--wt-500);
+    color: var(--river-styx);
+}
+
+.card-price-text{
+    font-family: var(--inter);
+    font-size: var(--font-x-large);
+    font-weight: var(--wt-400);
+    color: var(--black);
+}
+
+.card-rating-text{
+    font-family: var(--roboto);
+    font-size: var(--font-small);
+    font-weight: var(--wt-700);
+    color: var(--granite-gray);
+}
+
+.card-para-text{
+    font-family: var(--inter);
+    font-size: var(--font-small);
+    font-weight: var(--wt-700);
+    color: var(--infamous);
+    line-height: var(--p-height);
+    letter-spacing: var(--ls-1-8-p);
+}
+
+.feature-title{
+    font-family: var(--poppins);
+    font-size: var(--font-xx-large);
+    font-weight: var(--wt-700);
+    color: var(--mysterious-depths);
+}
