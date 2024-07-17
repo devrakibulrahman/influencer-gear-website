@@ -47,6 +47,7 @@
     --mysterious-depths: rgb(10, 8, 38);
     --dove-gray: rgb(108, 108, 108);
     --white: rgb(255, 255, 255);
+    --white-op: rgba(255, 255, 255, 0.1);
     --big-fish-to-fry: gb(217, 219, 225);
 
     /* ------------- font family name define */
@@ -176,7 +177,12 @@
     color: var(--white);
 }
 
-
+.footer-para{
+    font-family: var(--manrope);
+    font-size: var(--font-small);
+    font-weight: var(--wt-700);
+    color: var(--white);
+}
 
 /* ------------------------ header section start ------------------------ */
 
@@ -414,3 +420,57 @@
     margin-top: 16px;
 }
 /* ------------------------ feature section end ------------------------ */
+
+/* ------------------------ footer section start ------------------------ */
+#footer{
+    width: 100%;
+    min-height: 30vh;
+    background-color: var(--mysterious-depths);
+}
+
+.footer-content{
+    max-width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content .footer-details{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content .footer-details .footer-title{
+    margin-bottom: 10px;
+}
+
+.footer-content .footer-details .footer-para{
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.footer-content .footer-details .footer-social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 17px;
+}
+
+.footer-content .footer-details .footer-social-media .icon-box{
+    width: 32px;
+    height: 32px;
+    background-color: var(--white-op);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.footer-content .footer-details .footer-social-media .icon-box .icon{
+    font-size: 1.06rem;
+}
+/* ------------------------ footer section end ------------------------ */

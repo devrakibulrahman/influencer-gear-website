@@ -3,6 +3,7 @@
 /* ------------------ css variable define for responsive ------------------ */
 :root{
     /* ------------- font size define */
+    --font-smallest: 0.75rem; /** 12px **/
     --font-small: 0.875rem; /** 14px **/
     --font-medium: 1rem;    /** 16px **/
     --font-x-large: 1.5rem; /** 24px **/
@@ -61,6 +62,14 @@
 
     .feature-title{
         font-size: var(--font-x-large);
+    }
+
+    .footer-title{
+        font-size: var(--font-medium);
+    }
+
+    .footer-para{
+        font-size: var(--font-smallest);
     }
 
     /* --------- header section start --------- */
@@ -156,7 +165,7 @@
     }
     /* --------- popular collection end --------- */
 
-    /* --------- popular feature start --------- */
+    /* --------- feature start --------- */
     .feature-content{
         width: 100%;
         flex-direction: column-reverse;
@@ -166,6 +175,7 @@
 
     .feature-content .feature-img-box{
         width: 300px;
+        margin-bottom: 50px;
     }
 
     .feature-content .feature-img-box .feature-img{
@@ -183,9 +193,18 @@
     .feature-content .feature-details .feature-btn{
         margin: 50px 0 30px;
     }
-    /* --------- popular feature end --------- */
+    /* --------- feature end --------- */
 
+    /* --------- footer start --------- */
+    .footer-content .footer-details .footer-social-media .icon-box{
+        width: 24px;
+        height: 24px;
+    }
 
+    .footer-content .footer-details .footer-social-media .icon-box .icon{
+        font-size: var(--font-smallest);
+    }
+    /* --------- footer end --------- */
 }
   
 /* ------------- Small devices (phones, 576px and up) ------------- */
