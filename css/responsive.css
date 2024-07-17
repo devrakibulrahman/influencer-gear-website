@@ -1,11 +1,125 @@
 /* ------------------ responsive design ------------------ */
 
+/* ------------------ css variable define for responsive ------------------ */
+:root{
+    /* ------------- font size define */
+    --font-small: 0.875rem; /** 14px **/
+    --font-medium: 1rem;    /** 16px **/
+    --font-x-large: 1.5rem; /** 24px **/
+    --font-x-large2: 1.75rem; /** 28px **/
+    --font-xx-large: 2.375rem; /** 38px **/
+    --font-xx-large2: 3.25rem; /** 52px **/
+
+    /* ------------- line height define */
+    --small-height: 0.875rem; /** 14px **/
+    --x-large-height: 1.3rem; /** 21px **/
+    --x-large-height2: 1.5rem; /** 24px **/
+    --xx-large2-height: 1.75rem;   /** 28px **/
+    --p-height: 143%;
+
+    /* ------------- font family name define */
+    --wt-400: 400;
+    --wt-500: 500;
+    --wt-600: 600;
+    --wt-700: 700;
+}
+
+
 /* ------------- Extra small devices (phones, less than 576px) --------------- */
 @media (max-width: 575.98px) { 
     /* --------- css reusable classes --------- */
     .container {
         padding: 10px;
     }
+
+    .brand{
+        font-size: var(--font-medium);
+    }
+
+    .para-text{
+        font-size: var(--font-small);
+        font-weight: var(--wt-500);
+        line-height: var(--x-large-height);
+    }
+
+    .main-text{
+        font-size: var(--font-x-large2);
+        font-weight: var(--wt-700);
+    }
+
+    .btn-text{
+        font-weight: var(--wt-500);
+    }
+    /* --------- header section start --------- */
+    .header-content{
+        padding-top: 30px;
+    }
+
+    .header-content .mobile-menu{
+        display: block;
+    }
+
+    .header-content .mobile-menu .menu-bar{
+        font-size: 1.5rem;
+    }
+
+    .header-content .nav-content .navbar,
+    .header-content .nav-content .nav-icon-box .mobile-hide{
+        display: none;
+    }
+
+    .header-content .nav-content .nav-icon-box .nav-icon{
+        margin-left: 0;
+    }
+
+    .main-content{
+        min-height: 0;
+        flex-direction: column-reverse;
+        gap: 16px;
+        margin-top: 22px;
+    }
+
+    .main-content .main-details{
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-content .main-details .main-text{
+        margin-bottom: 15px;
+    }
+
+    .main-content .main-details .para-text{
+        margin-bottom: 20px;
+    }
+
+    .main-content .main-img-container{
+        width: 257px;
+        height: 257px;
+    }
+
+    .main-content .main-img-container .cam-img{
+        width: 80%;
+    }
+
+    .brand-container{
+        background-image: none;
+        margin-top: 50px;
+        align-items: baseline;
+        gap: 10px 50px;
+    }
+
+    .brand-container .brand-box{
+        width: 60px;
+        height: 30px;
+    }
+
+    .brand-container .brand-box .brand-img{
+        width: 100%;
+    }
+
+    /* --------- header section end --------- */
+
+
 }
   
 /* ------------- Small devices (phones, 576px and up) ------------- */
@@ -33,10 +147,10 @@
 }
   
 /* ------------- Extra large devices (large desktops, 1200px and up) ------------- */
-@media (min-width: 1200px) { 
+/* @media (min-width: 1200px) { 
     /* --------- css reusable classes --------- */
-    .container {
-        padding: 30px;
+   /* .container {
+        padding: 0px 30px;
     }
 
-}
+} */
