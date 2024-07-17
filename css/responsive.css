@@ -50,6 +50,11 @@
     .btn-text{
         font-weight: var(--wt-500);
     }
+
+    .section-text{
+        font-size: var(--font-medium);
+    }
+
     /* --------- header section start --------- */
     .header-content{
         padding-top: 30px;
@@ -118,6 +123,16 @@
     }
 
     /* --------- header section end --------- */
+
+    /* --------- popular collection start --------- */
+    .popular-collection-content .po-col-card-container{
+        grid-template-columns: 1fr;
+    }
+
+    .popular-collection-content .po-col-card-container .card{
+        width: 100%;
+    }
+    /* --------- popular collection end --------- */
 
 
 }
